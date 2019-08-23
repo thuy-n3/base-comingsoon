@@ -8,22 +8,26 @@ body{
 
 .container{
   display: flex;
+  overflow:hidden;
+  margin: .5em;
+
+  
 }
 
 .left{
- width: 70%;
+ width: 60%;
+ margin: .05em;
 }
 
 .right{
-  width: 30%;
+  width:40%;
+   margin: .05em;
 }
 
 @media (max-width: 760px){
   .container{
     flex-direction: column-reverse;
   }
-  .left, .right {
-    width: 100%;
-  }
+
 }
 
