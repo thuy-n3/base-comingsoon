@@ -10,7 +10,6 @@ body{
   display: flex;
   overflow:hidden;
   margin: .5em;
-
   
 }
 
@@ -24,9 +23,16 @@ body{
    margin: .05em;
 }
 
+img{
+  width: 100%;
+}
+
 @media (max-width: 760px){
   .container{
     flex-direction: column-reverse;
+  }
+  .right, .left{
+    width: 100%;
   }
 
 }
