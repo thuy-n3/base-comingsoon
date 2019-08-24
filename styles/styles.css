@@ -8,29 +8,43 @@ body{
 
 .container{
   display: flex;
-  overflow:hidden;
-  margin: .5em;
-  
+  height: 100vh;
 }
 
 .left{
  width: 60%;
- margin: .05em;
 }
 
 .right{
   width:40%;
-   margin: .05em;
 }
 
-img{
-  width: 100%;
+#logo {
+  background-image: url('../images/logo.svg');
+  width: 50%;
+  height: 40px;
+  background-repeat: no-repeat;
+  
+}
+
+#girlinshirt-desktop{
+ background-image:  url('../images/hero-desktop.jpg'); 
+ width: 100%;  
+/* max-width: 720px; */
+ height: 100vh;
+ background-size: cover;
+}
+
+header{
+  width: 100vh;
+  height: 50px;
 }
 
 @media (max-width: 760px){
   .container{
     flex-direction: column-reverse;
   }
+
   .right, .left{
     width: 100%;
   }
